@@ -1,5 +1,5 @@
 Package: com.icraze.slyd13
-Name: Slyd13 (Slide To Unlock)
+Name: Slyd13 (Beta)
 Depends: mobilesubstrate, ws.hbang.common (>= 1.11), firmware (>= 13.0)
 Conflicts: me.nepeta.nottoday12, io.ijapija00.notodayview, me.nepeta.slyd
 Version: 0.1-beta1

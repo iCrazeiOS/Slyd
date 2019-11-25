@@ -333,18 +333,6 @@ void setIsOnLockscreen(bool isIt) {
 
 -(void)applicationDidFinishLaunching:(id)arg1 {
     %orig;
-    if (!dpkgInvalid) return;
-    UIAlertController *alertController = [UIAlertController
-        alertControllerWithTitle:@"😡😡😡"
-        message:@"The build of Slyd you're using comes from an untrusted source. Pirate repositories can distribute malware and you will get subpar user experience using any tweaks from them.\nRemember: Slyd is free. Uninstall this build and install the proper version of Slyd from:\nhttps://icrazeios.github.io/repo/\n(it's free, damnit, why would you pirate that!?)"
-        preferredStyle:UIAlertControllerStyleAlert
-    ];
-
-    [alertController addAction:[UIAlertAction actionWithTitle:@"Damn!" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [((UIApplication*)self).keyWindow.rootViewController dismissViewControllerAnimated:YES completion:NULL];
-    }]];
-
-    [((UIApplication*)self).keyWindow.rootViewController presentViewController:alertController animated:YES completion:NULL];
 }
 
 %end

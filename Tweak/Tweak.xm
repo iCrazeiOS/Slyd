@@ -374,3 +374,4 @@ static void displayStatusChanged(CFNotificationCenterRef center, void *observer,
 
     %init(SlideToUnlock);
 }
+// Quix was here
